@@ -1,0 +1,22 @@
+package learning;
+
+import java.util.Scanner;
+
+public class countDigits {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+		// Asking the user to input a number
+		System.out.println("Enter a number to count its digits:");
+		int number = scanner.nextInt();
+
+		// Calling the method to count digits
+		int digitCount = countDigit(number);
+
+		// Displaying the result
+		System.out.println("The number " + number + " has " + digitCount + " digits.");
+		
+		scanner.close();
+
+	}
+}
